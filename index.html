@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn"><i class="fa fa-bars fa-3x"></i></button>
+            <script>
+            
+                function myFunction() {
+                  document.getElementById("myDropdown").classList.toggle("show");
+                }
+                
+                
+                window.onclick = function(event) {
+                  if (!event.target.matches('.dropbtn')) {
+                    var dropdowns = document.getElementsByClassName("dropdown-content");
+                    var i;
+                    for (i = 0; i < dropdowns.length; i++) {
+                      var openDropdown = dropdowns[i];
+                      if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                      }
+                    }
+                  }
+                }
+                </script>
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                <link rel="stylesheet" href="styleexample.css">
+            <div id="myDropdown" class="dropdown-content">
+              <a onclick="window.location.href = src='index.html'; ">Main</a>
+              <a href="#about">About</a>
+              <a href="#contact">Contact</a>
+            </div>
+          </div>
+          
+        <div class="home">
+           <button onclick="window.location.href = src='home.html'; "> <i class="fa fa-home fa-3x"></i>
+        </button>
+        </div>
+        <div id="socials">
+            <button onclick="window.open('https://www.facebook.com/adidas/', '_blank'); "><i class="fa fa-facebook-square fa-2x"></i></button>
+
+             <button onclick="window.open('https://www.linkedin.com/adidas/', '_blank'); ">
+             <i class="fa fa-linkedin fa-2x"></i></button>
+
+             <button onclick="window.open('https://www.twitter.com/adidas/', '_blank'); ">
+             <i class="fa fa-twitter-square fa-2x"></i></button>
+
+
+        </div>
+    </header>
+    <main>
+        <div id="box1">
+            <button onclick="window.open('https://www.facebook.com/adidas/', '_blank'); "></button>
+        </div>
+        <div id="box2"> </div>
+        <div id="box3"> </div>
+    </main>
+    <footer>
+        <p>Created by:  Gerda Gergardaite,  Tamas Major,  Tomas Docekal,  Bendeguz Kiss</p>
+    </footer>
+
+
+
+</body>
+
+</html>
